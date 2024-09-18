@@ -1,0 +1,26 @@
+main () {
+
+    char TXT[200];
+    int L,i,cmp=0;
+    printf("veuillez taper un texte : ");
+    gets(TXT); 
+    L=strlen(TXT);
+    printf("la longueur l de la chaine : %d\n", L);
+
+   
+}
+
+FUNCTION findVoyelles(str) {
+   let number = 0
+   let voy = ['a','e','u','i','o']
+   for(const el of str.toLowerCase()){
+    IF (voy.includes(el)){
+        number++
+    }
+   }
+
+   return number
+}
+
+console.log(findVoyelles("Je suis un eleve"));
+console.log(findVoyelles("tyhb"));
